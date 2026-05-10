@@ -1,0 +1,7 @@
+@use "globales/variables" as v;
+
+.header{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .7), rgb(0 0 0 / .7)), url(../img/header.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
