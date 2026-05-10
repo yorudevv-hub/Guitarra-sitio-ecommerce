@@ -1,7 +1,36 @@
 @use "globales/variables" as v;
 
-.header{
-    background-image: linear-gradient(to right, rgb(0 0 0 / .7), rgb(0 0 0 / .7)), url(../img/header.jpg);
-    background-size: cover;
-    background-position: 50%;
+
+[class$="__contenedor"] {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.header {
+  background-image:
+    linear-gradient(to right, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7)),
+    url(../../img/header.jpg);
+  background-size: cover;
+  background-position: 50%;
+  padding: 5rem 0;
+
+  &__guitarra {
+    display: none;
+  }
+
+  &__barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    width: 30rem;
+  }
 }
