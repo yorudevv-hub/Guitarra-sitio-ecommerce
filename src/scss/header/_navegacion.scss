@@ -1,0 +1,26 @@
+@use "globales/variables" as  v;
+
+.navegacion{
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 1;
+    @media (min-width:768pc){
+        margin-top: 0;
+    }
+    &__enlace{
+        color: v.$blanco;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .5rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        transition: background-color 300ms;
+        
+    }
+
+    &__enlace:hover{
+        background-color: v.$primario;
+    }
+}

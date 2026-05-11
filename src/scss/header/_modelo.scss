@@ -1,1 +1,37 @@
 @use "globales/variables" as v;
+@use "globales/mixin" as m;
+
+.modelo {
+  color: v.$blanco;
+  margin-top: 5rem;
+  text-align: center;
+  @include m.tablet {
+    text-align: left;
+    width: 50%;
+  }
+  &__nombre {
+    font-size: 8rem;
+  }
+
+  &__precio {
+    font-size: 6rem;
+    color: v.$primario;
+    font-weight: 900;
+  }
+
+  &__enlace {
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    border: 2px solid v.$primario;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: background-color 300ms;
+    color: v.$blanco;
+  }
+}
+
+.modelo__enlace:hover {
+  background-color: v.$primario;
+}
