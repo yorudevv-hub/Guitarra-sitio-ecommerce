@@ -1,22 +1,60 @@
 @use "globales/variables" as v;
 @use "globales/mixin" as m;
 
+.nosotros__grid {
+  display: grid;
+  gap: 4rem;
 
-.nosotros__grid{
-    display: grid;
-    gap: 4rem;
-
-    @include m.tablet{
-        grid-template-columns: repeat(2,1fr);
-    }
+  @include m.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (min-width: 992px){
-    .blog__grid{
-        grid-template-columns: repeat(4,1fr);
-    }
+@media (min-width: 992px) {
+  .blog__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    .blog__grid--pagina{
-        grid-template-columns: repeat(3,1fr);
-    }
+  .blog__grid--pagina {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.producto__formulario {
+ 
+
+}
+
+.producto__agregar-carrito {
+    margin-top: 6rem;
+    display: block;
+    background-color: v.$primario;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    padding: 2rem 5rem;
+    color: v.$blanco;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: background-color 300ms;
+  }
+
+.producto__agregar-carrito:hover {
+  background-color: v.$negro;
+  cursor: pointer;
+}
+
+.producto__cantidad:focus-visible{
+    outline: 2px solid v.$primario;
+    border: none;
+}
+
+.producto__cantidad{
+  padding: 1rem;
+  border: 1px solid v.$primario;
+}
+
+.producto__label{
+  font-size: 2.2rem;
 }

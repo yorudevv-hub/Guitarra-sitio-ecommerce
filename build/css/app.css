@@ -610,6 +610,15 @@ template {
   font-size: 1.6rem;
 }
 
+.entrada {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.entrada__contenido {
+  padding: 2rem;
+}
+
 .footer {
   margin-top: 5rem;
   background-color: #262626;
@@ -667,4 +676,37 @@ template {
   .blog__grid--pagina {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.producto__agregar-carrito {
+  margin-top: 6rem;
+  display: block;
+  background-color: #e99401;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  padding: 2rem 5rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: background-color 300ms;
+}
+
+.producto__agregar-carrito:hover {
+  background-color: #262626;
+  cursor: pointer;
+}
+
+.producto__cantidad:focus-visible {
+  outline: 2px solid #e99401;
+  border: none;
+}
+
+.producto__cantidad {
+  padding: 1rem;
+  border: 1px solid #e99401;
+}
+
+.producto__label {
+  font-size: 2.2rem;
 }
