@@ -1,0 +1,22 @@
+@use "globales/variables" as v;
+@use "globales/mixin" as m;
+
+
+.nosotros__grid{
+    display: grid;
+    gap: 4rem;
+
+    @include m.tablet{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 992px){
+    .blog__grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .blog__grid--pagina{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
